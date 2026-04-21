@@ -1,12 +1,78 @@
 body {
-    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
 }
 
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Forma */
+.form-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+input {
+    padding: 8px;
+    width: 70%;
+    font-size: 14px;
+}
+
+button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* Saraksts */
+.list-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.list-section li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Statusi */
 .done {
     text-decoration: line-through;
     color: gray;
 }
 
-button {
-    margin-left: 5px;
+.not-done {
+    color: black;
+}
+
+/* Statusa krāsa fonam */
+.done-item {
+    background-color: #e0ffe0;
+}
+
+.not-done-item {
+    background-color: #ffe0e0;
 }

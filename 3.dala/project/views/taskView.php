@@ -6,12 +6,24 @@
 </head>
 <body>
 
-<h1>Uzdevumi</h1>
+<div class="container">
 
-<input type="text" id="taskInput" placeholder="Jauns uzdevums">
-<button id="addBtn">Pievienot</button>
+    <h1>Uzdevumu pārvaldnieks</h1>
 
-<ul id="taskList"></ul>
+    <!-- Forma -->
+    <div class="form-section">
+        <h2>Pievienot uzdevumu</h2>
+        <input type="text" id="taskInput" placeholder="Ievadi uzdevumu...">
+        <button id="addBtn">Pievienot</button>
+    </div>
+
+    <!-- Saraksts -->
+    <div class="list-section">
+        <h2>Uzdevumu saraksts</h2>
+        <ul id="taskList"></ul>
+    </div>
+
+</div>
 
 <script src="assets/app.js"></script>
 </body>

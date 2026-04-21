@@ -12,14 +12,18 @@ function loadTasks() {
             data.forEach(task => {
                 const li = document.createElement("li");
 
+                li.className = task.status === 'done' ? 'done-item' : 'not-done-item';
+
                 li.innerHTML = `
-                    <span class="${task.status === 'done' ? 'done' : ''}">
-                        ${task.title}
+                    <span class="${task.status === 'done' ? 'done' : 'not-done'}">
+                        ${task.title} (${task.status})
                     </span>
 
-                    <button onclick="toggle(${task.id})">Done/Undo</button>
-                    <button onclick="edit(${task.id}, '${task.title}')">Edit</button>
-                    <button onclick="removeTask(${task.id})">Delete</button>
+                    <div>
+                        <button onclick="toggle(${task.id})">Done/Undo</button>
+                        <button onclick="edit(${task.id}, '${task.title}')">Edit</button>
+                        <button onclick="removeTask(${task.id})">Delete</button>
+                    </div>
                 `;
 
                 list.appendChild(li);
